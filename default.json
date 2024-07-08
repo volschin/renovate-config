@@ -17,9 +17,10 @@
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
   "rebaseWhen": "conflicted",
   "schedule": ["after 8am every weekday", "before 7pm every weekday"],
-  "pre-commit": {
-    "enabled": true
-  },
+  "pre-commit": { "enabled": true  },
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": " ( {{currentVersion}} → {{newVersion}} )",
+  "commitMessageSuffix": "",
   "packageRules": [
     {
       "description": "Auto merge Github Actions",
