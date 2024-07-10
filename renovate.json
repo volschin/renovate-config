@@ -5,8 +5,8 @@
   ],
   "packageRules": [
     {
-      "description": "Auto merge Github Releases",
-      "matchManagers": ["github-releases"],
+      "description": "Auto merge pre-commit",
+      "matchManagers": ["pre-commit"],
       "automerge": true,
       "automergeType": "branch",
       "automergeSchedule": [ "before 7am on Monday" ],
