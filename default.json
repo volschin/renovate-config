@@ -10,6 +10,8 @@
     ":timezone(Europe/Berlin)",
     ":automergeDigest",
     ":automergeBranch",
+    ":separatePatchReleases",
+    ":updateNotScheduled",
     "security:openssf-scorecard",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
