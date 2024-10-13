@@ -20,7 +20,7 @@
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
   "rebaseWhen": "conflicted",
-  "schedule": ["after 8am every weekday", "before 7pm every weekday"],
+  "schedule": ["after 7am", "before 7pm"],
   "pre-commit": { "enabled": true  },
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ( {{currentVersion}} → {{newVersion}} )",
@@ -31,7 +31,7 @@
       "matchManagers": ["github-actions"],
       "automerge": true,
       "automergeType": "branch",
-      "automergeSchedule": [ "before 7am on Monday" ],
+      "automergeSchedule": [ "before 6am on Monday" ],
       "ignoreTests": true,
       "matchUpdateTypes": ["minor", "patch", "digest"]
     },
@@ -40,7 +40,7 @@
       "matchManagers": ["pre-commit"],
       "automerge": true,
       "automergeType": "branch",
-      "automergeSchedule": [ "before 7am on Monday" ],
+      "automergeSchedule": [ "before 6am on Monday" ],
       "ignoreTests": true,
       "matchUpdateTypes": ["minor", "patch", "digest"]
     }
